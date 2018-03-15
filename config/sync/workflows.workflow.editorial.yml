@@ -1,0 +1,74 @@
+uuid: 09365ff9-ee8f-482e-bda8-bd6233af2a5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.how_state_plan_requirements_are_
+    - node.type.options_for_submitting_a_state_p
+    - node.type.overview
+    - node.type.wioa_state_plan_for_the_state
+    - node.type.wioa_state_plan_type
+  module:
+    - content_moderation
+_core:
+  default_config_hash: T_JxNjYlfoRBi7Bj1zs5Xv9xv1btuBkKp5C1tNrjMhI
+id: editorial
+label: Editorial
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      label: Archived
+      weight: 5
+      published: false
+      default_revision: true
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: -5
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 0
+  transitions:
+    archive:
+      label: Archive
+      from:
+        - published
+      to: archived
+      weight: 2
+    archived_draft:
+      label: 'Restore to Draft'
+      from:
+        - archived
+      to: draft
+      weight: 3
+    archived_published:
+      label: Restore
+      from:
+        - archived
+      to: published
+      weight: 4
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+    publish:
+      label: Publish
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+  entity_types:
+    node:
+      - how_state_plan_requirements_are_
+      - options_for_submitting_a_state_p
+      - overview
+      - wioa_state_plan_for_the_state
+      - wioa_state_plan_type

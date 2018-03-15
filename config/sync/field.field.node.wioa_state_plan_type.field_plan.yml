@@ -1,0 +1,21 @@
+uuid: 95fba426-6397-4053-9628-7884d38a5fa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plan
+    - node.type.wioa_state_plan_type
+  module:
+    - options
+id: node.wioa_state_plan_type.field_plan
+field_name: field_plan
+entity_type: node
+bundle: wioa_state_plan_type
+label: Plan
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

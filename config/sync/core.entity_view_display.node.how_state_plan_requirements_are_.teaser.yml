@@ -1,0 +1,28 @@
+uuid: 5311d800-ed68-499d-8dbc-9af1258f44c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.how_state_plan_requirements_are_.body
+    - node.type.how_state_plan_requirements_are_
+  module:
+    - text
+    - user
+id: node.how_state_plan_requirements_are_.teaser
+targetEntityType: node
+bundle: how_state_plan_requirements_are_
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,18 @@
+uuid: b3999eb0-c613-43d6-a0c2-9c970c72b03b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Options for submitting a state plan'
+type: options_for_submitting_a_state_p
+description: 'Options for submitting a state plan'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

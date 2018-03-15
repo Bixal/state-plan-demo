@@ -1,0 +1,22 @@
+uuid: d358b8f8-715a-4ddf-87db-b154f87bb383
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - material_cascade
+_core:
+  default_config_hash: GnEYO-Q9sUpg3T8rWnw6OTSNB4CU0GXF7gH7J4rvNtg
+id: material_cascade_help
+theme: material_cascade
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

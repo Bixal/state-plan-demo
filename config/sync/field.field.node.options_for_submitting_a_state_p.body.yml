@@ -1,0 +1,22 @@
+uuid: e2ee41e9-13d4-4116-8ce7-490dc8530428
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.options_for_submitting_a_state_p
+  module:
+    - text
+id: node.options_for_submitting_a_state_p.body
+field_name: body
+entity_type: node
+bundle: options_for_submitting_a_state_p
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
