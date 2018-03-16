@@ -1,0 +1,20 @@
+uuid: 63cc934f-2c1b-4e37-ba1e-22a1e6d82c29
+langcode: en
+status: true
+dependencies:
+  theme:
+    - material_cascade
+_core:
+  default_config_hash: JabulLWERvPnsz82R7gxTPDah04vGc1PgIEhRhCHXe0
+id: material_cascade_local_actions
+theme: material_cascade
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

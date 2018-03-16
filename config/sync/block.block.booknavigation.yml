@@ -1,0 +1,21 @@
+uuid: f97bf7fb-61b4-4839-9ec9-cc3c14a15e4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - book
+  theme:
+    - material_cascade
+id: booknavigation
+theme: material_cascade
+region: sidebar_second
+weight: 0
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: 'Book navigation'
+  provider: book
+  label_display: visible
+  block_mode: 'book pages'
+visibility: {  }

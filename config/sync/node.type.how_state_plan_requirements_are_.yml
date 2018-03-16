@@ -1,0 +1,18 @@
+uuid: ca7c5a96-e04d-422a-b347-e7dbe75d3768
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'How state plan requirements are organized'
+type: how_state_plan_requirements_are_
+description: 'How state plan requirements are organized'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

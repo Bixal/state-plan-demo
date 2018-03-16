@@ -1,0 +1,22 @@
+uuid: cfd38d0f-54b8-448f-bc96-0fe3afd382f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.wioa_state_plan_type
+  module:
+    - text
+id: node.wioa_state_plan_type.body
+field_name: body
+entity_type: node
+bundle: wioa_state_plan_type
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

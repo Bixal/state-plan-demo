@@ -1,0 +1,22 @@
+uuid: 8a312b04-8a1b-4a8b-9d0f-621d169a02a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.how_state_plan_requirements_are_
+  module:
+    - text
+id: node.how_state_plan_requirements_are_.body
+field_name: body
+entity_type: node
+bundle: how_state_plan_requirements_are_
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

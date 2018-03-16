@@ -1,0 +1,27 @@
+uuid: 3a0b7ced-ea1b-4cec-842b-c297d214f0ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_plan
+field_name: field_plan
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: unified
+      label: '<b>Unified State Plan</b> This plan includes the Adult Program, Dislocated Worker Program, Youth Program, Wagner-Peyser Act Program, Adult Education and Family Literacy Act Program, and Vocational Rehabilitation Program.'
+    -
+      value: combined
+      label: '<b>Combined State Plan</b> This plan includes the Adult Worker Program, Dislocated Worker Program, Youth Program, Wagner-Peyser Act Program, Adult Education and Family Literacy Act Program, and Vocational Rehabilitation Program as well as one or more of the optional combined State Plan partner programs identified below and Vocational Rehabilitation Program as well as one or more of the optional combined State Plan partner programs identified below.'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

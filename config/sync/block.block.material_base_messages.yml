@@ -1,0 +1,22 @@
+uuid: 98de6c8a-c3b0-4962-80a7-54752a4d0f39
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - material_base
+_core:
+  default_config_hash: t2_kDwXoVcOIGy9DoNFwdcFUBQ2FHJ3R6QS4P_nbI78
+id: material_base_messages
+theme: material_base
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

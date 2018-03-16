@@ -1,0 +1,28 @@
+uuid: 1d4f1dd9-7ce9-476f-a87b-09d7c37e97a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.wioa_state_plan_type.body
+    - node.type.wioa_state_plan_type
+  module:
+    - text
+    - user
+id: node.wioa_state_plan_type.teaser
+targetEntityType: node
+bundle: wioa_state_plan_type
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

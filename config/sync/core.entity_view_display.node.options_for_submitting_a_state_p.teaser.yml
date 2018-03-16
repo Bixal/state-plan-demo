@@ -1,0 +1,28 @@
+uuid: 5888d720-4cca-44c3-b4ed-39cdb93e9f69
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.options_for_submitting_a_state_p.body
+    - node.type.options_for_submitting_a_state_p
+  module:
+    - text
+    - user
+id: node.options_for_submitting_a_state_p.teaser
+targetEntityType: node
+bundle: options_for_submitting_a_state_p
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

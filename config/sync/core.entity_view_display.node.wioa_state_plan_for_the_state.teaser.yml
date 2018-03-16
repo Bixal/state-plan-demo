@@ -1,0 +1,18 @@
+uuid: 5022b20d-7c0a-4ddc-be3b-0ea5636fb6f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.wioa_state_plan_for_the_state
+  module:
+    - user
+id: node.wioa_state_plan_for_the_state.teaser
+targetEntityType: node
+bundle: wioa_state_plan_for_the_state
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }
