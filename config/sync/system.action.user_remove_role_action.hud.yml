@@ -1,0 +1,14 @@
+uuid: 528de5ca-2f84-4cb4-a68e-8877a07e4764
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hud
+  module:
+    - user
+id: user_remove_role_action.hud
+label: 'Remove the HUD role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hud

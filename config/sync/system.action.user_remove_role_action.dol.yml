@@ -1,0 +1,14 @@
+uuid: a0eaf2d0-ff63-46d6-8420-f1d6ce08aad1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dol
+  module:
+    - user
+id: user_remove_role_action.dol
+label: 'Remove the DOL role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: dol

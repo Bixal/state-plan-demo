@@ -1,0 +1,22 @@
+uuid: bb8caa0a-ee49-4cb2-86f7-51d471fe13e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.operational_planning_elements
+  module:
+    - text
+id: node.operational_planning_elements.body
+field_name: body
+entity_type: node
+bundle: operational_planning_elements
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

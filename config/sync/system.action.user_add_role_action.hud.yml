@@ -1,0 +1,14 @@
+uuid: bc5db994-bfd6-4a39-b219-8b9ef529def9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hud
+  module:
+    - user
+id: user_add_role_action.hud
+label: 'Add the HUD role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: hud

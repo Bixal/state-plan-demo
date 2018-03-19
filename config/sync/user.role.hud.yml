@@ -1,0 +1,9 @@
+uuid: 1c1f0caa-221f-4c7e-aa0c-ade67ca5ed3a
+langcode: en
+status: true
+dependencies: {  }
+id: hud
+label: HUD
+weight: 4
+is_admin: null
+permissions: {  }

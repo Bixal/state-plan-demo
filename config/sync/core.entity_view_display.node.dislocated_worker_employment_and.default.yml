@@ -1,47 +1,40 @@
-uuid: ccac32c9-0614-4142-a1f5-95602a7c572d
+uuid: be576235-0a8b-4ec1-8b55-49ac08ab5526
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_display.comment.comment.default
-    - field.field.node.wioa_state_plan_type.body
-    - field.field.node.wioa_state_plan_type.field_comments
-    - field.field.node.wioa_state_plan_type.field_plan
-    - field.field.node.wioa_state_plan_type.field_state
-    - node.type.wioa_state_plan_type
+    - field.field.node.dislocated_worker_employment_and.body
+    - field.field.node.dislocated_worker_employment_and.field_comments
+    - field.field.node.dislocated_worker_employment_and.field_state
+    - node.type.dislocated_worker_employment_and
   module:
     - comment
     - entity_print
-    - options
     - text
     - user
 third_party_settings:
   entity_print:
     pdf_label: 'View PDF'
-id: node.wioa_state_plan_type.default
+id: node.dislocated_worker_employment_and.default
 targetEntityType: node
-bundle: wioa_state_plan_type
+bundle: dislocated_worker_employment_and
 mode: default
 content:
   body:
     label: hidden
     type: text_default
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  content_moderation_control:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  entity_print_view_pdf:
     weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  entity_print_view_pdf:
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
   field_comments:
-    weight: 6
+    weight: 3
     label: above
     settings:
       view_mode: default
@@ -49,15 +42,8 @@ content:
     third_party_settings: {  }
     type: comment_default
     region: content
-  field_plan:
-    weight: 5
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   field_state:
-    weight: 3
+    weight: 4
     label: above
     settings:
       link: true
@@ -65,7 +51,7 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 1
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }

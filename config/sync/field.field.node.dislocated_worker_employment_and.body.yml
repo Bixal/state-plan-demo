@@ -1,0 +1,22 @@
+uuid: ad04a00d-14bb-4688-a85a-ae2b12725a59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.dislocated_worker_employment_and
+  module:
+    - text
+id: node.dislocated_worker_employment_and.body
+field_name: body
+entity_type: node
+bundle: dislocated_worker_employment_and
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

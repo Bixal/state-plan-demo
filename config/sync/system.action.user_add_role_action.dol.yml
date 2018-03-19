@@ -1,0 +1,14 @@
+uuid: 7477ad39-b461-4097-8e3b-3baa754547c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dol
+  module:
+    - user
+id: user_add_role_action.dol
+label: 'Add the DOL role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: dol

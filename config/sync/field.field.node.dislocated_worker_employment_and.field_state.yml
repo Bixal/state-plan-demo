@@ -1,0 +1,29 @@
+uuid: bceb4d88-1d74-4d09-898b-0b3bcc9ddca9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_state
+    - node.type.dislocated_worker_employment_and
+    - taxonomy.vocabulary.states
+id: node.dislocated_worker_employment_and.field_state
+field_name: field_state
+entity_type: node
+bundle: dislocated_worker_employment_and
+label: State
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      states: states
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

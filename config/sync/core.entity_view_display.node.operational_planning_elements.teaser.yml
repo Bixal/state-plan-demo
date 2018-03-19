@@ -1,0 +1,31 @@
+uuid: 8ca3d8d1-a3e9-467c-850a-7eb2cd62b109
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.operational_planning_elements.body
+    - node.type.operational_planning_elements
+  module:
+    - text
+    - user
+id: node.operational_planning_elements.teaser
+targetEntityType: node
+bundle: operational_planning_elements
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

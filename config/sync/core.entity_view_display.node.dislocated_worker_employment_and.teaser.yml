@@ -1,0 +1,31 @@
+uuid: 0cda9862-0882-4a7b-803e-f758166268f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dislocated_worker_employment_and.body
+    - node.type.dislocated_worker_employment_and
+  module:
+    - text
+    - user
+id: node.dislocated_worker_employment_and.teaser
+targetEntityType: node
+bundle: dislocated_worker_employment_and
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

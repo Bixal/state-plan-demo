@@ -1,0 +1,14 @@
+uuid: a9ba8f94-f5eb-43dc-bbcb-b921f75809c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.federal_reviewers
+  module:
+    - user
+id: user_remove_role_action.federal_reviewers
+label: 'Remove the Federal Reviewers role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: federal_reviewers
