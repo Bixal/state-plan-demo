@@ -22,6 +22,7 @@
         "drupal/admin_toolbar": "^1.23",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5",
+        "drupal/entity_print": "2.x",
         "drupal/material_admin": "^1.0@alpha",
         "drupal/material_base": "^1.2",
         "drush/drush": "^9.0.0",
